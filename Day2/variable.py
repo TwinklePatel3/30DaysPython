@@ -39,8 +39,8 @@ print(type(contact_number))
 print("length of your first name",len(first_name))
 
 # 3. Compare the length of your first name and your last name
-print(min(len(first_name),len(last_name)))
-print(max(len(first_name),len(last_name)))
+print(len(first_name) == len(last_name))
+# print(max(len(first_name),len(last_name)))
 
 # 4. Declare 5 as num_one and 4 as num_two
 num_one = 5
