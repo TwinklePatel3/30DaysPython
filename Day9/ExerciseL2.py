@@ -20,6 +20,8 @@ else:
 
 # 2. Check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
 month = input("Enter month :")
+month = str(month).capitalize()
+
 if month == "September" or month == "October" or month == "November":
     print("The season is Autumn")
 elif month == "December" or month == "January" or month == "February":
