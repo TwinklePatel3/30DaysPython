@@ -6,11 +6,11 @@ import requests
 
 # 1. Read this url and find the 10 most frequent words. romeo_and_juliet = 'http://www.gutenberg.org/files/1112/1112.txt'
 romeo_and_juliet_url = 'http://www.gutenberg.org/files/1112/1112.txt'
-# response = requests.get(romeo_and_juliet_url)
-# words = response.text.split()
-# most_frequent_words = [(words.count(x), x) for x in set(words)]
-# print("The 10 most frequent words : ", sorted(
-#     most_frequent_words, reverse=True)[:10])
+response = requests.get(romeo_and_juliet_url)
+words = response.text.split()
+most_frequent_words = [(words.count(x), x) for x in set(words)]
+print("The 10 most frequent words : ", sorted(
+    most_frequent_words, reverse=True)[:10])
 
 # 2. Read the cats API and cats_api = 'https://api.thecatapi.com/v1/breeds' and find :
 #   -   the min, max, mean, median, standard deviation of cats' weight in metric units.
