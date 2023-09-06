@@ -90,8 +90,8 @@ print(check_text_similarity('./Data/michelle_obama_speech.txt',
                             './Data/melina_trump_speech.txt'))
 
 # 5. Find the 10 most repeated words in the romeo_and_juliet.txt
-# print("10 most repeated words in the romeo_and_juliet.txt",
-#       find_most_common_words("./Data/romeo_and_juliet.txt", 10))
+print("10 most repeated words in the romeo_and_juliet.txt",
+      find_most_common_words("./Data/romeo_and_juliet.txt", 10))
 
 # 6. Read the hacker news csv file and find out:
 # a) Count the number of lines containing python or Python
