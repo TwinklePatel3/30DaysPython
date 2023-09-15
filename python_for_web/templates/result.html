@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container">
+    <h1>Text Analysis Result </h1>
+    <div class="result-header">
+        <p>Total number of words: {{data.total_words}}</p>
+        <p>Number of character: {{data['num_of_char']}}</p>
+        <p>The most frequent word: {{data.freq_word}}</p>
+        <p>The word variety(lexical density): {{data.word_variety}}%</p>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        {% for header in headers %}
+                        <th>
+                            {{header}}
+                        </th>
+                        {% endfor %}
+                    </tr>
+
+                </thead>
+                <tbody>
+                    {% for row in tableData %}
+                    <tr>
+                        <td>{{row[1]}}</td>
+                        <td>{{row[0]}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
