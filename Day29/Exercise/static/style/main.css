@@ -1,0 +1,264 @@
+/* === GENERAL === */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === css variables === */
+:root {
+    --header-bg-color: #7b42a9;
+    /* --textarea-bg-color: rgb(250, 246, 246); */
+    --body-bg-color: rgb(210, 214, 210);
+    --nav-link-color: #bbb;
+    --primary-color:#a053df;
+    --primary-color-lighter: #a053df73;
+}
+
+/* === body style === */
+body {
+    margin: auto;
+    line-height: 1.75;
+    font-weight: 900;
+    word-spacing: 1.5px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 160%;
+}
+
+/* === header style === */
+header {
+    background: var(--header-bg-color);
+    color:white;
+}
+
+/* === title and subtitle style === */
+h1,
+h2 {
+    margin: 20px;
+    font-weight: 300;
+    font-family: Nunito;
+
+}
+
+/* === header menu style === */
+
+.menu-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(221, 215, 215);
+    padding: 25px;
+}
+
+.nav-lists {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0 5px;
+    color: var(--nav-link-color);
+    color:rgb(246, 235, 235);
+    font-weight: 500;
+}
+
+.brand-name {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+/* === paragraph text style === */
+p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+/* === main style === */
+main {
+    width: 60%;
+    margin: auto;
+}
+
+/* === container div inside main style === */
+
+.container {
+    padding: 20px;
+    margin: auto;
+}
+ ol > li {
+    font-weight: 500;
+ }
+.tech-lists {
+    margin: 10px auto;
+    text-align: left;
+    font-size: 20px;
+}
+
+.tech {
+    margin:5px auto;
+}
+
+/* === button style === */
+
+.btn{
+    padding:12px 0;
+    background-color: white;
+    margin: 10px 0;
+    cursor: pointer;
+    border:2px solid var(--primary-color);
+    min-width:150px;
+    max-width: 250px;
+    border-radius:5px;
+    transition: background-color 1s;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color:black
+}
+.btn:active, .btn:focus, .btn:hover {
+    background-color: var(--primary-color);
+  
+}
+.btn:active , .btn:focus, .btn:hover  {
+    color:white;
+    font-weight: 600;
+}
+
+
+
+
+.controlls {
+    display: flex;
+    align-items: center;
+}
+.controlls .btn {
+    margin-right: 10px;;
+}
+
+.result-header {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* === textarea style === */
+
+textarea{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius:10px;
+    outline:2px solid var(--primary-color-lighter);
+    border:2px solid var(--primary-color-lighter);
+    margin:10px 0;
+}
+textarea:hover, textarea:focus {
+    border: 2px solid var(--primary-color);
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+
+}
+
+tbody tr,
+tbody td {
+    padding: .625em;
+    text-align: center;
+}
+
+thead tr th {
+    background: var(--header-bg-color);
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 15px;
+    color: var(--nav-link-color);
+}
+
+/* .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.form-control {
+    height: 45px;
+    padding: 10px;
+
+    border: none;
+    outline: 2px solid rgba(74, 119, 153, 0.45);
+    background: var(--textarea-bg-color);
+    font-size: 18px;
+    caret-color: var(--header-bg-color);
+    font-family: Lato;
+    font-weight: 300;
+    margin: 5px 0;
+
+}
+
+.form-control:focus {
+    border: none;
+    outline: 2px solid rgba(74, 119, 153, 0.45);
+    background: var(--textarea-bg-color);
+    font-size: 18px;
+    caret-color: var(--header-bg-color);
+    font-family: Lato;
+    font-weight: 300;
+    margin: 5px 0;
+}
+ */
+
+/* === responsiveness === */
+@media (max-width:600px) {
+    main {
+        width: 95%;
+        margin:auto;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .nav-lists {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    svg {
+        width: 100%;
+    }
+
+}

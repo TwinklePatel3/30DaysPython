@@ -1,0 +1,35 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin:15px 0px;
+}
+.form-group label {
+    margin-bottom: 5px;
+}
+input:not([type=checkbox]):not([type=radio]), select{
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    outline:1px solid var(--primary-color-lighter);
+    border:1px solid var(--primary-color-lighter);
+    font-size: 18px;
+}
+input::placeholder, select::placeholder {
+    color:rgb(181, 174, 174);
+}
+input:not([type=checkbox]):not([type=radio]):hover, select:hover{
+    border: 1px solid var(--primary-color)
+}
+textarea{
+    max-width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid;
+    border-radius:10px;
+    outline:1px solid var(--primary-color-lighter);
+    border:1px solid var(--primary-color-lighter);
+    margin:10px 0;
+}
+textarea:hover, textarea:focus {
+    border: 1px solid var(--primary-color)
+}
